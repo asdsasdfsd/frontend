@@ -1,0 +1,58 @@
+.App {
+    background-color: #F4F9FF;
+}
+
+.selectedMode {
+    border-radius: 50px;
+    background-color: #DFEFFF;
+    border-color: transparent;
+    width: 120px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.mode {
+    background-color: transparent;
+    border-color: transparent;
+    width: 120px;
+    height: 40px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.react-datepicker-wrapper .react-datepicker__input-container::after {
+    display: none;
+}
+
+.calendarHeader {
+    font-size: 20px;
+    width: 13%;
+    height: auto;
+    background-color: #F7F7F7;
+}
+
+.day {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: right;
+    vertical-align: top;
+}
+
+.weekend {
+    background-color: #F4F4F6;
+}
+
+.diffMonth {
+    color: #818183;
+}
+
+.today {
+    color: white;
+    background-color: #97BeF9;
+}
+
+.monthFormat {
+    border-color: transparent;
+    font-size: 40px;
+}

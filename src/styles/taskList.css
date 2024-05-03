@@ -1,0 +1,115 @@
+/* taskList的样式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* 任务列表container */
+  .task-list-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* 网格 */
+  .task-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .detail-header {
+    display: flex;
+    justify-content: space-between; /* 标题在左，关闭按钮在右 */
+    align-items: center;
+  }
+
+  .header-title {
+    flex-grow: 1; /* 标题占用最大空间，推动关闭按钮到右侧 */
+    margin: 0;
+  }
+  
+  /* 单个 */
+  .task-card {
+    width: 250px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    cursor: pointer; /* 鼠标悬停改进 */
+  }
+  
+  /* 详细信息容器 */
+  .detail-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; /*动画*/
+  }
+  
+  .divider {
+    height: 1px;
+    background-color: #cccccc;
+    margin: 20px 0; /* 控制分隔线和其他元素之间的间距 */
+  }
+
+  .close-button {
+    padding: 5px 10px;
+    background-color: rgb(92, 21, 214);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /*margin-left: 50px;*/
+    float: right;
+  }
+
+  button {
+    padding: 5px 10px;
+    background-color: rgb(52, 10, 125);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /*margin-left: 50px;*/
+    float: right;
+  }
+  
+  /* 项目信息样式 */
+  .detail-item {
+    margin-bottom: 10px;
+  }
+  
+  .detail-item label {
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .detail-item span {
+    color: #666666;
+  }
+  
+  /* 媒体查询，适用于小屏幕  我也不知道用不用的上
+  @media (max-width: 600px) {
+    .task-grid {
+      flex-direction: column; /* 小屏幕时单列排列 /
+      justify-content: flex-start;
+    }
+  
+    .task-card {
+      width: 100%; /* 宽度自适应 /
+    }
+  
+    .detail-container {
+      max-width: 100%; /* 详细信息自适应 /
+    }
+  } 
+  */

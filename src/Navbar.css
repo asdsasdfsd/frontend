@@ -1,0 +1,39 @@
+.topbar {
+position: fixed; 
+left: 0; 
+top: 0; 
+width: 100%; 
+height: 10%; 
+padding: 0px; 
+}
+
+.sidebar {
+position: fixed; 
+left: 0; 
+top: 10%; 
+width: 17%; 
+height: 90%; 
+padding: 0px; 
+}
+
+.sidebar ul {
+list-style-type: none; 
+padding: 0; 
+}
+
+.sidebar ul li {
+margin-bottom: 10px; 
+}
+
+.sidebar li span {
+display: flex;
+align-items: center;
+}
+
+.sidebar li span img {
+margin-right: 10px; 
+}
+
+.sidebar li span {
+cursor: pointer;
+}
